@@ -7,3 +7,5 @@ export CLICOLOR=1
 export TERM=xterm-256color
 
 export PS1="\W \$"
+
+source .bashrc
