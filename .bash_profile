@@ -1,4 +1,4 @@
-export PATH="/usr/local/bin:$PATH"
+export PATH="/usr/local/bin:$PATH:./node_modules/.bin"
 
 # Set CLICOLOR if you want Ansi Colors in iTerm2
 export CLICOLOR=1
