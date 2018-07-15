@@ -8,6 +8,7 @@
     "editor.fontFamily": "Fira Code",
     "editor.fontLigatures": true,
     "editor.folding": false,
+    "editor.renderLineHighlight": "none",
     "workbench.activityBar.visible": false,
     "workbench.statusBar.visible": false,
     "workbench.startupEditor": "newUntitledFile",
