@@ -1,6 +1,6 @@
 .sass-cache/
 node_modules/
-.bower-*/
+.firebase/
 .idea/
 *.iml
 logs
