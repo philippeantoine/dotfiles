@@ -1,3 +1,7 @@
 # dotfiles
 
-Simple dotfiles for iterm
+
+* Bash profile
+* Zsh config
+* Git ignore default config
+* Visual Studio Code and EditorConfig
