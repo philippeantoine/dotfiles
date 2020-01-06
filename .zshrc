@@ -1,3 +1,5 @@
+export PATH=/usr/local/share/npm/bin:$PATH
+
 export NVM_DIR="~/.nvm"
 source ~/.nvm/nvm.sh
 
