@@ -26,3 +26,4 @@ pop() {
 
 # --- Plugins Oh My Zsh (si installé) ---
 plugins=(git nvm)
+eval "$(mise activate zsh)"
