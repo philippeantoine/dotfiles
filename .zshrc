@@ -1,6 +1,8 @@
 # --- PATH & Environnement ---
 export PATH=/usr/local/share/npm/bin:$PATH
 
+export HOMEBREW_BUNDLE_FILE="$HOME/dotfiles/Brewfile"
+
 # --- Fonctions personnalisées ---
 # bootstrap a new project folder and open with Zed
 pop() {
