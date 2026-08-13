@@ -27,3 +27,4 @@ pop() {
 # --- Plugins Oh My Zsh (si installé) ---
 plugins=(git nvm)
 eval "$(mise activate zsh)"
+[ -x "/opt/homebrew/bin/brew" ] && eval "$(/opt/homebrew/bin/brew shellenv)"
