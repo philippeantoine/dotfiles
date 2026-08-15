@@ -1,9 +1,12 @@
-# Polyglot runtime manager (asdf rust clone)
-brew "mise"
-# Cross-shell prompt for astronauts
-brew "starship"
+# cli
 brew "gh"
-cask "font-jetbrains-mono-nerd-font"
-cask "font-fira-code-nerd-font"
+brew "mise"
+brew "starship"
+
+# apps
 cask "ghostty"
 cask "zed"
+
+# fonts
+cask "font-fira-code-nerd-font"
+cask "font-jetbrains-mono-nerd-font"
