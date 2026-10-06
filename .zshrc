@@ -23,3 +23,10 @@ eval "$(mise activate zsh)"
 # --- 3. Prompt (Starship) ---
 eval "$(starship init zsh)"
 alias gssh='rw -r --ensure_cloudtop_on philippe-demo.c.googlers.com'
+
+# --- Antigravity CLI (agy) ---
+export PATH="$HOME/.local/bin:$PATH"
+if [[ ! -x "$HOME/.local/bin/agy" ]]; then
+  echo "Installation d'Antigravity CLI (agy)..."
+  curl -fsSL https://storage.googleapis.com/antigravity-public/tools/install.sh | sh
+fi
