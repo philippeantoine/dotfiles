@@ -22,7 +22,9 @@ eval "$(mise activate zsh)"
 
 # --- 3. Prompt (Starship) ---
 eval "$(starship init zsh)"
-alias gssh='rw -r --ensure_cloudtop_on philippe-demo.c.googlers.com'
+
+# --- Work environment (if present) ---
+[[ -f "$HOME/dotfiles/work/.zshrc" ]] && source "$HOME/dotfiles/work/.zshrc"
 
 # --- Antigravity CLI (agy) ---
 export PATH="$HOME/.local/bin:$PATH"

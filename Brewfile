@@ -1,4 +1,5 @@
 # cli
+brew "chezmoi"
 brew "gh"
 brew "mise"
 brew "starship"
