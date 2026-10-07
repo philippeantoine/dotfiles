@@ -1,6 +1,4 @@
 # --- PATH & Environnement ---
-export PATH=/usr/local/share/npm/bin:$PATH
-
 export HOMEBREW_BUNDLE_FILE="$HOME/dotfiles/Brewfile"
 
 # --- Fonctions personnalisées ---
@@ -10,9 +8,6 @@ pop() {
   echo "$(date '+%H:%M') START" >> devnotes.md
   zed . devnotes.md
 }
-
-# --- Plugins Oh My Zsh ---
-plugins=(git)
 
 # --- 1. Fondations (Homebrew) ---
 [ -x "/opt/homebrew/bin/brew" ] && eval "$(/opt/homebrew/bin/brew shellenv)"
