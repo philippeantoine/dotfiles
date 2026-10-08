@@ -22,6 +22,7 @@ check "Brewfile synced"         'brew bundle check --file=./Brewfile'    'Run: b
 
 # 2. Config files ($HOME & ~/.config)
 check "~/.zshrc active"         '[[ -f ~/.zshrc ]] && grep -q "mise activate" ~/.zshrc' 'Apply dot_zshrc via chezmoi'
+check "Chezmoi managing .zshrc" 'chezmoi managed | grep -q "zshrc"' 'Migrate .zshrc to chezmoi (dot_zshrc) and apply'
 check "~/.gitconfig configured" '[[ -f ~/.gitconfig ]] && git config --global user.email' 'Create & apply dot_gitconfig via chezmoi'
 check "Mise config (~/.config)" '[[ -f ~/.config/mise/config.toml ]]'    'Link/apply ~/.config/mise/config.toml'
 check "Starship (~/.config)"    '[[ -f ~/.config/starship.toml ]]'       'Link/apply ~/.config/starship.toml'
@@ -30,7 +31,7 @@ check "Zed (~/.config)"         '[[ -f ~/.config/zed/settings.json ]]'   'Link/a
 
 # 3. Runtimes & Work isolation
 check "Mise runtimes ready"     'mise ls --current | grep -q python'     'Run: mise install'
-check "Work env isolated"       '! grep -qi "googlers" .zshrc && [[ -d work ]]' 'Move work aliases/scripts into work/'
+check "Work env isolated"       '! grep -qi "googlers" ~/.zshrc && [[ -d work ]]' 'Move work aliases/scripts into work/'
 
 echo ""
 if [[ -n "$NEXT" ]]; then
