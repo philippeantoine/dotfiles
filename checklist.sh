@@ -23,6 +23,7 @@ check "Brewfile synced"         'brew bundle check --file=./Brewfile'    'Run: b
 # 2. Config files ($HOME & ~/.config)
 check "~/.zshrc active"         '[[ -f ~/.zshrc ]] && grep -q "mise activate" ~/.zshrc' 'Apply dot_zshrc via chezmoi'
 check "Chezmoi managing .zshrc" 'chezmoi managed | grep -q "zshrc"' 'Migrate .zshrc to chezmoi (dot_zshrc) and apply'
+check "Chezmoi managing .config" 'chezmoi managed | grep -q "^\.config/starship\.toml$"' 'Migrate ~/.config files to dot_config/ and apply via chezmoi'
 check "~/.gitconfig configured" '[[ -f ~/.gitconfig ]] && git config --global user.email' 'Create & apply dot_gitconfig via chezmoi'
 check "Mise config (~/.config)" '[[ -f ~/.config/mise/config.toml ]]'    'Link/apply ~/.config/mise/config.toml'
 check "Starship (~/.config)"    '[[ -f ~/.config/starship.toml ]]'       'Link/apply ~/.config/starship.toml'
